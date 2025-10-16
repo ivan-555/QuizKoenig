@@ -1,0 +1,24 @@
+{{#if @open}}
+  <div local-class="backdrop" role="presentation" {{on "click" @onClose}}></div>
+
+  <div
+    local-class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="fact-title"
+  >
+    <h2 id="fact-title" local-class="title">
+      {{if @isCorrect "Richtig!" "Falsch!"}}
+    </h2>
+
+    {{#if @fact}}
+      <p local-class="fact">{{@fact}}</p>
+    {{else}}
+      <p local-class="fact">Kein Fact vorhanden.</p>
+    {{/if}}
+
+    <button type="button" local-class="next" {{on "click" @onClose}}>
+      Nächste Frage
+    </button>
+  </div>
+{{/if}}

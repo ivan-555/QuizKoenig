@@ -1,1 +1,26 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body{
+    height: 100dvh;
+    overflow: hidden;
+}
+
+:global(.home-page){
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+:global(.home-page h1){
+    text-align: center;
+    margin: 10px 0;
+}
+
+:global(.home-page p){
+    text-align: center;
+    margin: 10px 0;
+}

@@ -1,0 +1,9 @@
+{{page-title (if @model.categoryLabel @model.categoryLabel "Unbekannte Kategorie")}}
+
+{{#if @model.categoryLabel}}
+  <QuizRunner @category={{@model.categoryLabel}} @questions={{@model.questions}}/>
+{{else}}
+  <h1>Kategorie nicht gefunden</h1>
+  <LinkTo @route="index">Zurück</LinkTo>
+{{/if}}
+

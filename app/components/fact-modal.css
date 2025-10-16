@@ -1,0 +1,32 @@
+.backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.4);
+}
+
+.modal {
+  position: fixed; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(600px, 90vw);
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.title { margin: 0 0 .5rem; }
+.fact { white-space: pre-wrap; margin-bottom: 1rem; }
+
+.next {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.next:is(:hover,:focus-visible) {
+  outline: none;
+  filter: brightness(1.1);
+}

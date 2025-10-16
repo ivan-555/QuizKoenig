@@ -1,0 +1,67 @@
+.back { margin-bottom: 0.5rem; }
+
+.title { margin: 0.5rem 0; }
+
+
+/* === Progress-Bar === */
+.progressbar {
+  position: relative;
+  height: 12px;
+  background: rgba(0,0,0,.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 0.25rem 0 1rem;
+}
+
+.progressbar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #7bcf9b, #4aa46f);
+  transition: width 260ms ease; /* smoother tick */
+}
+
+.progressbar-text {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+
+/* == Frage == */
+.question {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* === Antworten === */
+.answers {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.answer {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  background: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.answer[aria-disabled="true"] {
+  pointer-events: none;
+}
+
+/* Feedback-Zustände */
+.is-correct {
+  background: #e7f7ec;
+  border-color: #7bcf9b;
+}
+
+.is-wrong {
+  background: #fde8e8;
+  border-color: #f19999;
+}
