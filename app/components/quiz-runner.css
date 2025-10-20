@@ -1,54 +1,95 @@
-.back { margin-bottom: 0.5rem; }
+.quiz-runner{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-.title { margin: 0.5rem 0; }
+.return-btn i{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+.title {
+  margin: 10px 0;
+  opacity: 0.95;
+  font-size: 1.7rem;
+}
+
+.progress{
+  font-size: .8rem;
+  color: var(--faded-text-color);
+  margin-bottom: 7px;
+}
+
+.progress span{
+  font-size: 1rem;
+  color: inherit;
+}
 
 /* === Progress-Bar === */
 .progressbar {
   position: relative;
-  height: 12px;
-  background: rgba(0,0,0,.08);
-  border-radius: 999px;
+  height: 5px;
+  background: var(--highlight-color-1);
+  border-radius: 50px;
   overflow: hidden;
-  margin: 0.25rem 0 1rem;
+  margin-bottom: 10px;
 }
 
 .progressbar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #7bcf9b, #4aa46f);
-  transition: width 260ms ease; /* smoother tick */
+  background: linear-gradient(90deg, var(--highlight-color-4), #e05b5b);
+  transition: width 260ms ease;
+  border-radius: 50px;
 }
 
-.progressbar-text {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-  opacity: 0.85;
+/* Main Wrapper */
+.main-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Center Wrapper */
+.center-wrapper{
+  margin-top: -5vh; /* pull it a little to the top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* == Frage == */
 .question {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 1200px;
+  margin-bottom: 50px;
 }
 
 /* === Antworten === */
 .answers {
   list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90vw;
+  max-width: 800px;
 }
 
 .answer {
   width: 100%;
-  padding: 0.75rem 1rem;
-  border-radius: 12px;
-  border: 1px solid rgb(0 0 0 / 10%);
-  background: white;
-  text-align: left;
+  background: transparent;
   cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid var(--highlight-color-3);
+  font-size: 1.2rem;
+  padding: 15px;
+  transition: border .1s;
 }
 
 .answer[aria-disabled="true"] {
@@ -57,11 +98,9 @@
 
 /* Feedback-Zustände */
 .is-correct {
-  background: #e7f7ec;
-  border-color: #7bcf9b;
+  border-color: var(--correct-color);
 }
 
 .is-wrong {
-  background: #fde8e8;
-  border-color: #f19999;
+  border-color: var(--wrong-color);
 }

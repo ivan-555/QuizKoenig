@@ -3,7 +3,7 @@ export const RAW_QUESTIONS = [
   {
     category: "Geschichte",
     general_knowledge: true,
-    question: "Wie nennt man eine antike römische Brücke, die Wasser leitete?",
+    question: "Welche gilt als fünfte Grundgeschmacksrichtung neben süß, sauer, salzig und bitter?",
     answers: [
       { id: "a", text: "Kolonnade" },
       { id: "b", text: "Aquädukt" },
@@ -12,35 +12,7 @@ export const RAW_QUESTIONS = [
     ],
     correct: "b",
     fact:
-      "Aquädukte waren Wasserleitungen der Römer, die ganze Städte mit Frischwasser versorgten ..."
-  },
-  {
-    category: "Geschichte",
-    general_knowledge: true,
-    question: "Wie nennt man 2?",
-    answers: [
-      { id: "a", text: "Kolonnade" },
-      { id: "b", text: "Aquädukt" },
-      { id: "c", text: "Therme" },
-      { id: "d", text: "Watergate" }
-    ],
-    correct: "b",
-    fact:
-      "Aquädukte waren Wasserleitungen der Römer, die ganze Städte mit Frischwasser versorgten ..."
-  },
-  {
-    category: "Geschichte",
-    general_knowledge: true,
-    question: "Wie nennt man 3?",
-    answers: [
-      { id: "a", text: "Kolonnade" },
-      { id: "b", text: "Aquädukt" },
-      { id: "c", text: "Therme" },
-      { id: "d", text: "Watergate" }
-    ],
-    correct: "b",
-    fact:
-      "Aquädukte waren Wasserleitungen der Römer, die ganze Städte mit Frischwasser versorgten ..."
+      "Mediterrane Küche umfasst die Esskulturen der Mittelmeerländer von Spanien, Frankreich und Italien über Griechenland bis zur Levante, zur Türkei und nach Nordafrika. Typisch sind Olivenöl als Hauptfett, viel Gemüse, Tomaten, Zwiebeln, Knoblauch, Kräuter wie Oregano, Rosmarin und Thymian, Getreide wie Weizen und Reis, Hülsenfrüchte, Nüsse und Samen sowie Fisch und Meeresfrüchte. Rotes Fleisch spielt eher eine Nebenrolle, Käse und Joghurt kommen regional unterschiedlich häufig vor, Wein wird traditionell in Maßen zum Essen getrunken. Beispiele reichen von Paella, Ratatouille und Pasta über Mezze, Hummus und Falafel bis zu Couscous und Tajine. Studien verknüpfen das Muster der mediterranen Ernährung mit günstigen Effekten auf Herz Kreislauf und Stoffwechsel, was an der Kombination aus pflanzenbetonten Lebensmitteln, ungesättigten Fetten und vielen Ballaststoffen liegt."
   },
 
   // weitere Fragen …

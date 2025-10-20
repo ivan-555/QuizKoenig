@@ -1,12 +1,51 @@
+:root{
+    --bg-color : rgb(31, 40, 73);
+    --highlight-color-1: rgb(48, 54, 83);
+    --highlight-color-2: #107ade;
+    --highlight-color-3: #234060;
+    --highlight-color-4: #e05ba0;
+    --faded-text-color: #afafaf;
+    --main-text-color: rgb(248, 248, 248);
+    --correct-color: #7bcf9b;
+    --wrong-color: #f19999;
+}
+
+/* === Firefox only === */
+@supports not selector(::-webkit-scrollbar) {
+  :root {
+    scrollbar-color: var(--highlight-color-2) transparent;
+    scrollbar-width: thin;
+  }
+}
+
+/* === WebKit only === */
+@supports selector(::-webkit-scrollbar) {
+  *::-webkit-scrollbar {
+    width: 1px;
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--highlight-color-2);
+    border-radius: 20px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
 *{
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: "Inter";
 }
 
 html, body{
     height: 100dvh;
     overflow: hidden;
+    background: var(--bg-color);
 }
 
 :global(.home-page){
@@ -18,9 +57,12 @@ html, body{
 :global(.home-page h1){
     text-align: center;
     margin: 10px 0;
+    margin-top: 15px;
 }
 
 :global(.home-page p){
     text-align: center;
     margin: 10px 0;
+    font-size: 1rem;
+    margin-bottom: 15px;
 }

@@ -1,9 +1,14 @@
 .theme-card{
-    background: rgb(241 151 151);
-    padding: 10px;
+    background: var(--highlight-color-1);
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     position: relative;
+    cursor: pointer;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
 }
 
 .details{
@@ -12,12 +17,16 @@
     gap: 10px;
 }
 
+.details span{
+    font-size: 1.2rem;
+}
+
 .image{
-    border: 1px solid red;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    top: -10px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 20px;
 }
 

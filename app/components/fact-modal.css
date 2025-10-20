@@ -1,32 +1,75 @@
 .backdrop {
-  position: fixed; inset: 0;
+  position: fixed;
+  inset: 0;
   background: rgba(0,0,0,.4);
+  animation: fadeIn .3s forwards;
 }
 
 .modal {
-  position: fixed; left: 50%; top: 50%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: min(600px, 90vw);
-  background: #fff;
+  width: 95vw;
+  max-width: 600px;
+  background: var(--highlight-color-1);
   border-radius: 16px;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  padding: 20px 0;
+  animation: fadeScaleIn .3s forwards;
+  max-height: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.title { margin: 0 0 .5rem; }
-.fact { white-space: pre-wrap; margin-bottom: 1rem; }
+.title {
+  text-align: center;
+  font-size: 1.3rem;
+}
 
-.next {
-  display: inline-block;
+.title.correct{
+  color: var(--correct-color);
+}
+
+.title.wrong{
+  color: var(--wrong-color);
+}
+
+.fact {
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  margin: 20px 10px;
+  margin-right: 1px;
+  padding: 0 5px;
+  padding-right: 12px;
+}
+
+.next-question-btn {
   padding: .6rem 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0,0,0,.1);
-  background: #111;
-  color: #fff;
+  border: none;
+  outline: none;
+  background: var(--highlight-color-2);
   cursor: pointer;
+  display: block;
+  margin: auto;
 }
 
-.next:is(:hover,:focus-visible) {
-  outline: none;
-  filter: brightness(1.1);
+@keyframes fadeScaleIn {
+  0%{
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
 }

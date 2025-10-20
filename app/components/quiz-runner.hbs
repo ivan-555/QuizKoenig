@@ -1,59 +1,61 @@
-<LinkTo @route="index">
-  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-</LinkTo>
-
-{{#if this.current}}
-  <h1 local-class="title">{{@category}}</h1>
-  <p local-class="progress">Frage {{this.currentNumber}} / {{this.total}}</p>
-
-
-  <div
-    local-class="progressbar"
-    role="progressbar"
-    aria-label="Fortschritt"
-    aria-valuemin="0"
-    aria-valuemax={{this.total}}
-    aria-valuenow={{this.currentNumber}}
-  >
+<div local-class="quiz-runner">
+  <LinkTo @route="index" local-class="return-btn">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+  </LinkTo>
+  
+  {{#if this.current}}
+    <h1 local-class="title">{{@category}}</h1>
+    <p local-class="progress"><span>Frage {{this.currentNumber}}</span> / {{this.total}}</p>
+  
+  
     <div
-      local-class="progressbar-fill"
-      style={{concat "width:" this.progressPercent "%"}}
-    ></div>
-    <div local-class="progressbar-text">
-      Frage {{this.currentNumber}} / {{this.total}}
+      local-class="progressbar"
+      role="progressbar"
+      aria-label="Fortschritt"
+      aria-valuemin="0"
+      aria-valuemax={{this.total}}
+      aria-valuenow={{this.currentNumber}}
+    >
+      <div
+        local-class="progressbar-fill"
+        style={{concat "width:" this.progressPercent "%"}}
+      ></div>
     </div>
-  </div>
-
-
-  <p local-class="question">{{this.current.question}}</p>
-
-  <ul local-class="answers">
-    {{#each this.uiAnswers as |a|}}
-      {{#let (this.shouldShowCorrect a.id) (this.shouldShowWrong a.id) as |isCorrect isWrong|}}
-        <li>
-          <button
-            type="button"
-            local-class={{concat
-              "answer "
-              (if isCorrect "is-correct ")
-              (if isWrong "is-wrong")
-            }}
-            {{on "click" (fn this.choose a.id)}}
-            aria-disabled={{this.isLocked}}
-          >
-            {{a.text}}
-          </button>
-        </li>
-      {{/let}}
-    {{/each}}
-  </ul>
-
-  <FactModal
-    @open={{this.showFact}}
-    @fact={{this.current.fact}}
-    @isCorrect={{eq this.selectedId this.current.correct}}
-    @onClose={{this.handleCloseFact}}
-  />
-{{else}}
-  <p>Keine Frage gefunden.</p>
-{{/if}}
+  
+  
+    <div local-class="main-wrapper">
+      <div local-class="center-wrapper">
+        <p local-class="question">{{this.current.question}}</p>
+        <ul local-class="answers">
+          {{#each this.uiAnswers as |a|}}
+            {{#let (this.shouldShowCorrect a.id) (this.shouldShowWrong a.id) as |isCorrect isWrong|}}
+              <li>
+                <button
+                  type="button"
+                  local-class={{concat
+                    "answer "
+                    (if isCorrect "is-correct ")
+                    (if isWrong "is-wrong")
+                  }}
+                  {{on "click" (fn this.choose a.id)}}
+                  aria-disabled={{this.isLocked}}
+                >
+                  {{a.text}}
+                </button>
+              </li>
+            {{/let}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  
+    <FactModal
+      @open={{this.showFact}}
+      @fact={{this.current.fact}}
+      @isCorrect={{eq this.selectedId this.current.correct}}
+      @onClose={{this.handleCloseFact}}
+    />
+  {{else}}
+    <p>Keine Frage gefunden.</p>
+  {{/if}}
+</div>

@@ -80,7 +80,7 @@ export default class QuizRunnerComponent extends Component {
     if (this._timerRef) cancel(this._timerRef);
     this._timerRef = later(this, () => {
       this.showFact = true;
-    }, 1000);
+    }, 600);
   }
 
   // Feedback-Klassen: nur nach Lock zeigen
