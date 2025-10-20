@@ -1,0 +1,10 @@
+better icons
+preloader
+sound effects
+kategories scroll animation
+app
+media querys font size + spacing - max begrenzung
+google login account: local storage - account data
+stars % performance kategorie + progress
+ende von kategorie katalog modal performance mit msg "schließe das thema mit 90% ab um die kategorie zu meistern" - wenn gemeistert -> Krone rechtes oberes eck kategorie card
+lighthouse audit
