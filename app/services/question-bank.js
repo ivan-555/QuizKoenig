@@ -1,9 +1,13 @@
+// app/services/question-bank.js
 import Service from '@ember/service';
 import QUESTIONS from '../data/questions';
 
 const STORAGE_QUEUES = 'quiz.queue.v1';
 const STORAGE_POS    = 'quiz.pos.v1';
 
+// ---------- Helpers -----------------------------------------------------------
+
+// Fisher-Yates
 function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -13,11 +17,27 @@ function shuffle(arr) {
   return a;
 }
 
+// Robuste Normalisierung für Kategorien: slug-ähnlicher Key
+// - Unicode-Normalisierung
+// - kleinschreibung
+// - & -> Leerzeichen (damit "Essen & Trinken" == "essen trinken")
+// - alles Nicht-Alphanumerische -> Leerzeichen
+// - Whitespace kollabieren
+function catKey(str) {
+  return String(str ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/&/g, ' ')
+    .replace(/[^a-z0-9äöüß]+/g, ' ')  // erlaube einfache dt. Buchstaben
+    .trim()
+    .replace(/\s+/g, '-');            // mache daraus einen slug-ähnlichen key
+}
+
+// -----------------------------------------------------------------------------
+
 export default class QuestionBankService extends Service {
-  // Verbleibende IDs je Kategorie (Stack/Array)
-  _queues = Object.create(null);      // { [categoryLabel]: string[] }
-  // Anzahl beantworteter Fragen in der aktuellen Runde je Kategorie
-  _positions = Object.create(null);   // { [categoryLabel]: number }
+  _queues = Object.create(null);    // { [catKey]: string[] }
+  _positions = Object.create(null); // { [catKey]: number }
 
   constructor() {
     super(...arguments);
@@ -26,90 +46,97 @@ export default class QuestionBankService extends Service {
       if (q) this._queues = JSON.parse(q) || Object.create(null);
       const p = localStorage.getItem(STORAGE_POS);
       if (p) this._positions = JSON.parse(p) || Object.create(null);
-    } catch (_) {
-      // ignore storage errors
-    }
+    } catch (_) {}
   }
 
   _save() {
     try {
       localStorage.setItem(STORAGE_QUEUES, JSON.stringify(this._queues));
       localStorage.setItem(STORAGE_POS, JSON.stringify(this._positions));
-    } catch (_) {
-      // ignore storage errors
-    }
+    } catch (_) {}
   }
 
-  // ---------- Fragenpool-Utilities ----------
-  all() { return QUESTIONS; }
-  categories() { return [...new Set(QUESTIONS.map(q => q.category))].sort(); }
-  byCategory(category) { return QUESTIONS.filter(q => q.category === category); }
-  byGeneralKnowledge(flag = true) { return QUESTIONS.filter(q => q.general_knowledge === flag); }
+  // ---------- Fragenpool-Utilities ------------------------------------------
 
-  // IDs für eine Kategorie-Überschrift (Allgemeinwissen kommt aus dem Flag)
+  all() { return QUESTIONS; }
+
+  categories() {
+    return [...new Set(QUESTIONS.map(q => q.category))].sort((a,b) =>
+      a.localeCompare(b, 'de', { sensitivity: 'base' })
+    );
+  }
+
+  byCategory(categoryLabel) {
+    const key = catKey(categoryLabel);
+    return QUESTIONS.filter(q => catKey(q.category) === key);
+  }
+
+  byGeneralKnowledge(flag = true) {
+    return QUESTIONS.filter(q => q.general_knowledge === flag);
+  }
+
+  // IDs für Kategorie (Allgemeinwissen via Flag)
   _idsFor(categoryLabel) {
-    if (categoryLabel === 'Allgemeinwissen') {
+    if (catKey(categoryLabel) === catKey('Allgemeinwissen')) {
       return this.byGeneralKnowledge(true).map(q => q.id);
     }
     return this.byCategory(categoryLabel).map(q => q.id);
   }
 
-  // Queue sicherstellen (bei Start und nach Rundenende)
-  _ensureQueue(category) {
-    const needsFill = !this._queues[category] || this._queues[category].length === 0;
+  // ---------- Queue / Progress ----------------------------------------------
+
+  _ensureQueue(categoryLabel) {
+    const key = catKey(categoryLabel);
+    const needsFill = !this._queues[key] || this._queues[key].length === 0;
     if (needsFill) {
-      const ids = this._idsFor(category);
-      this._queues[category] = shuffle(ids);
-      // Neue Runde: bisher beantwortet = 0
-      this._positions[category] = 0;
+      const ids = this._idsFor(categoryLabel);
+      this._queues[key] = shuffle(ids);
+      this._positions[key] = 0;
       this._save();
     }
   }
 
-  // ----- Aktuelle Frage NUR ANZEIGEN (nicht verbrauchen)
-  currentId(category) {
-    this._ensureQueue(category);
-    const arr = this._queues[category];
-    return arr && arr.length ? arr[arr.length - 1] : null; // Spitze (peek)
+  currentId(categoryLabel) {
+    const key = catKey(categoryLabel);
+    this._ensureQueue(categoryLabel);
+    const arr = this._queues[key];
+    return arr && arr.length ? arr[arr.length - 1] : null; // peek
   }
 
-  currentQuestion(category) {
-    const id = this.currentId(category);
+  currentQuestion(categoryLabel) {
+    const id = this.currentId(categoryLabel);
     return id ? (QUESTIONS.find(q => q.id === id) || null) : null;
   }
 
-  // ----- Tatsächlich fortschreiten (nach "Nächste Frage")
-  commit(category) {
-    this._ensureQueue(category);
-    // eine ID „verbrauchen“
-    this._queues[category].pop();
-    // beantwortete +1 → Anzeige springt auf nächste
-    this._positions[category] = (this._positions[category] ?? 0) + 1;
+  commit(categoryLabel) {
+    const key = catKey(categoryLabel);
+    this._ensureQueue(categoryLabel);
+    this._queues[key].pop(); // consume one
+    this._positions[key] = (this._positions[key] ?? 0) + 1;
     this._save();
   }
 
-  // Manuell zurücksetzen
-  reset(category) {
-    delete this._queues[category];
-    delete this._positions[category];
+  reset(categoryLabel) {
+    const key = catKey(categoryLabel);
+    delete this._queues[key];
+    delete this._positions[key];
     this._save();
   }
 
-  // ---------- Progress-APIs ----------
-  total(category) {
-    return this._idsFor(category).length;
+  total(categoryLabel) {
+    return this._idsFor(categoryLabel).length;
   }
 
-  remaining(category) {
-    this._ensureQueue(category);
-    return this._queues[category]?.length ?? this.total(category);
+  remaining(categoryLabel) {
+    const key = catKey(categoryLabel);
+    this._ensureQueue(categoryLabel);
+    return this._queues[key]?.length ?? this.total(categoryLabel);
   }
 
-  // 1-basiert: Nummer der aktuell angezeigten Frage
-  currentIndex(category) {
-    const answered = this._positions[category] ?? 0;   // bereits bestätigte Fragen
-    const total = this.total(category);
-    // Vor der ersten commit: answered=0 → Anzeige = 1 (wenn total>0)
+  currentIndex(categoryLabel) {
+    const key = catKey(categoryLabel);
+    const answered = this._positions[key] ?? 0;
+    const total = this.total(categoryLabel);
     if (total === 0) return 0;
     return Math.min(answered + 1, total);
   }
