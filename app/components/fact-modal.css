@@ -12,7 +12,7 @@
   transform: translate(-50%, -50%);
   width: 95vw;
   max-width: 600px;
-  background: var(--highlight-color-1);
+  background: rgb(48, 54, 83);
   border-radius: 16px;
   padding: 20px 0;
   animation: fadeScaleIn .3s forwards;
@@ -48,7 +48,7 @@
   border-radius: 12px;
   border: none;
   outline: none;
-  background: var(--highlight-color-2);
+  background: var(--highlight-color-1);
   cursor: pointer;
   display: block;
   margin: auto;

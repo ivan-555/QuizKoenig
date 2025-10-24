@@ -32,7 +32,7 @@
 .progressbar {
   position: relative;
   height: 5px;
-  background: var(--highlight-color-1);
+  background: var(--glassmorph-color);
   border-radius: 50px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -41,7 +41,7 @@
 .progressbar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, var(--highlight-color-4), #e05b5b);
+  background: linear-gradient(90deg, var(--highlight-color-2), #e05b5b);
   transition: width 260ms ease;
   border-radius: 50px;
 }
@@ -86,7 +86,7 @@
   background: transparent;
   cursor: pointer;
   border-radius: 12px;
-  border: 2px solid var(--highlight-color-3);
+  border: 2px solid var(--border-color-blue);
   font-size: 1.2rem;
   padding: 15px;
   transition: border .1s;

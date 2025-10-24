@@ -1,8 +1,22 @@
 <LinkTo @route="quiz" @model={{@slug}} local-class="theme-card">
-    <div local-class="details">
-        <span>{{@theme}}</span>
-    </div>
-    <div local-class="image">
+<div local-class="image">
         <img src={{@icon}} alt="icon">
     </div>
+    <div local-class="details">
+        <span local-class="theme">{{@theme}}</span>
+        <div local-class="progress">
+            <span local-class="question">
+                {{#if this.hasQuestions}}
+                    Frage {{this.currentNumber}}
+                {{else}}
+                Keine Fragen
+                {{/if}}
+            </span>
+            <div local-class="spacer">
+                <span>/</span>
+                <span>{{this.total}}</span>
+            </div>
+        </div>
+    </div>
+    <i class="fa-solid fa-web-awesome" local-class="crown-icon diamond"></i>
 </LinkTo>

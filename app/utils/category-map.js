@@ -9,7 +9,7 @@ export const CATEGORY_BY_SLUG = {
   geschichte: 'Geschichte',
   astronomie: 'Astronomie',
   politik: 'Politik',
-  'essen-trinken': 'Essen & Trinken',
+  gastronomie: 'Gastronomie',
   tierwelt: 'Tierwelt',
   geographie: 'Geographie',
 };
