@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'quizz-koenig',
+    modulePrefix: 'quiz-koenig',
     environment,
     rootURL: '/',
     locationType: 'history',

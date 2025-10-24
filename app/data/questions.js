@@ -963,7 +963,7 @@ export const RAW_QUESTIONS = [
   fact: "Der Panamakanal wurde 1914 eröffnet und ist rund 82 Kilometer lang. Er verkürzt den Seeweg zwischen Atlantik und Pazifik um tausende Kilometer, weil Schiffe nicht mehr um das gefährliche Kap Hoorn an der Südspitze Südamerikas fahren müssen. Der Kanal nutzt ein Schleusensystem, um Schiffe über den höher gelegenen Gatunsee zu heben und wieder abzusenken. Heute passieren jährlich über 12.000 Schiffe den Kanal, was ihn zu einer der wichtigsten Wasserstraßen der Welt macht.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welche ist die Hauptzutat für Rum?",
   answers: [
@@ -1002,7 +1002,7 @@ export const RAW_QUESTIONS = [
   fact: "Die Große Pyramide von Gizeh wurde um 2.560 v. Chr. erbaut und ist die größte der drei Pyramiden von Gizeh. Sie ist nach dem Pharao Cheops benannt, der in der 4. Dynastie des Alten Reiches regierte. Die Pyramide war eine Grabstätte für Cheops, doch seine Mumie wurde nie gefunden. Vermutlich wurde sie schon in der Antike geplündert. Der Bau dauerte etwa 20 Jahre, und dafür wurden Millionen, Tonnen schwere, Steinblöcke verbaut. Mit ursprünglich etwa 146 Metern Höhe war sie über 3.800 Jahre lang das höchste Bauwerk der Welt. Bis heute ist sie das einzige noch erhaltene der Sieben Weltwunder der Antike.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welche sind die 4 traditionellen Zutaten des deutschen Reinheitsgebots?",
   answers: [
@@ -1158,7 +1158,7 @@ export const RAW_QUESTIONS = [
   fact: "Die Erde ist in 24 Zeitzonen eingeteilt, eine für jede Stunde des Tages. Grundlage ist die Erdrotation, die 360° in 24 Stunden durchläuft, also 15° pro Stunde. Theoretisch könnte man rund um den Globus immer genau eine Stunde Zeitunterschied pro Zone haben. In der Praxis weichen die Grenzen aber oft ab: Viele Länder passen ihre Zeitzonen an politische oder wirtschaftliche Interessen an. So gibt es tatsächlich Regionen mit halben oder sogar viertel Stunden Unterschied, und China etwa benutzt trotz seiner Größe nur eine einzige Zeitzone.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was bedeutet Cuvée bei einem Wein?",
   answers: [
@@ -1171,7 +1171,7 @@ export const RAW_QUESTIONS = [
   fact: "Als Cuvée bezeichnet man im Weinbau den Verschnitt, also die Mischung verschiedener Rebsorten, Jahrgänge oder Lagen. Ziel ist es, die besten Eigenschaften zu kombinieren, z. B. mehr Aroma, bessere Struktur oder längere Haltbarkeit. Besonders berühmt ist das Verfahren in der Champagner-Herstellung, wo oft über 50 verschiedene Grundweine zu einer Cuvée vereint werden, um den typischen Geschmack eines Hauses konstant zu halten.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welche Methode wird traditionell zur Herstellung von Champagner verwendet?",
   answers: [
@@ -1184,7 +1184,7 @@ export const RAW_QUESTIONS = [
   fact: "Echter Champagner muss nach der „Méthode traditionnelle“ (klassisch) hergestellt werden. Dabei erfolgt die zweite Gärung direkt in der Flasche. Die Hefen produzieren Kohlensäure, die sich im Wein löst. So entsteht das feine Prickeln. Dabei werden die Flaschen in ein Rüttelpult eingespannt und regelmäßig leicht gedreht und schräg gestellt. Dadurch wandern die Hefepartikel nach der zweiten Gärung in den Flaschenhals. Später wird dieser eingefroren und der Hefepfropfen entfernt. Im Gegensatz dazu werden bei günstigeren Schaumweinen oft große Tanks für die zweite Gärung genutzt, das nennt man „Charmat Verfahren“. Das Verfahren ist schneller und günstiger, erzeugt aber trotzdem echte Gärungskohlensäure. Prosecco ist das bekannteste Beispiel.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Wodurch unterscheidet sich Schaumwein grundsätzlich von Perlwein?",
   answers: [
@@ -1457,7 +1457,7 @@ export const RAW_QUESTIONS = [
   fact: "Im Zweiten Weltkrieg nutzten die Nazis eine elektromechanische Maschine namens Enigma, um ihre Nachrichten zu verschlüsseln. Nur wer die aktuelle Einstellung der Maschine kannte, konnte die Funksprüche entziffern. Der britische Mathematiker Alan Turing entwickelte während des Kriegs im geheimen Forschungszentrum Bletchley Park die sogenannte „Bombe“, eine elektromechanische Maschine, die Millionen möglicher Enigma-Einstellungen testen konnte. Damit gelang es den Alliierten, die verschlüsselten Funksprüche der deutschen Wehrmacht zu knacken. Historiker schätzen, dass Turings Arbeit den Krieg um mehrere Jahre verkürzte und Millionen Leben rettete. Turing gilt heute als einer der Väter der modernen Informatik, wurde zu Lebzeiten jedoch tragisch wegen seiner Homosexualität verfolgt und erst Jahrzehnte später offiziell rehabilitiert und geehrt.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "In welchem Land hat Kaffee seinen Ursprung?",
   answers: [
@@ -1483,7 +1483,7 @@ export const RAW_QUESTIONS = [
   fact: "Opium stammt aus dem Milchsaft des Schlafmohns. Daraus werden Alkaloide wie Morphin oder Codein gewonnen. Das sind wichtige Schmerzmittel, aber auch die Basis für illegale Drogen wie Heroin. Schlafmohn wird vor allem in Regionen wie Afghanistan, Südostasien und Teilen Lateinamerikas angebaut. Für viele Bauern dort ist der Mohnanbau die wichtigste Einnahmequelle, weil er mehr Geld bringt als herkömmliche Feldfrüchte, trotz der hohen Risiken durch Kriminalität und Verbot. Schon vor über 5.000 Jahren nutzten Menschen im Mittelmeerraum den Schlafmohn, damit zählt er zu den ältesten Kulturpflanzen der Welt.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Aus welchen Hauptzutaten bestand das ursprüngliche Coca-Cola-Rezept?",
   answers: [
@@ -1652,7 +1652,7 @@ export const RAW_QUESTIONS = [
   fact: "Im 13. Jahrhundert versuchte das Mongolische Reich zweimal, Japan zu erobern. Beide Male (1274 und 1281) wurden die riesigen Invasionsflotten durch gewaltige Taifune zerstört. Die Japaner sahen diese Stürme als göttlichen Eingriff und nannten sie „Kamikaze“: göttlicher Wind. Der Begriff wurde Jahrhunderte später im Zweiten Weltkrieg wieder aufgegriffen, als japanische Piloten als „Kamikaze“ Selbstmordangriffe flogen, in Erinnerung an die legendären Stürme, die Japan einst vor den Mongolen gerettet hatten.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welche Zutat gehört nicht in eine klassische italienische Carbonara?",
   answers: [
@@ -1665,7 +1665,7 @@ export const RAW_QUESTIONS = [
   fact: "Die originale Pasta alla Carbonara aus Rom wird traditionell nur mit Eiern, Pecorino-Käse, Guanciale (Schweinebacke) und Pfeffer zubereitet. Viele internationale Varianten fügen Sahne hinzu, doch in Italien gilt das als „falsche Carbonara“. Die Cremigkeit entsteht allein durch das Zusammenspiel von Ei und Käse.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Woraus wird Tequila hergestellt?",
   answers: [
@@ -1678,7 +1678,7 @@ export const RAW_QUESTIONS = [
   fact: "Echter Tequila wird ausschließlich aus der Blauen Weber-Agave hergestellt, die in Mexiko wächst. Die Pflanzen brauchen 8–10 Jahre, bis sie reif sind. Aus dem Herzen der Agave, der sogenannten Piña, wird der süße Saft gewonnen, vergoren und anschließend destilliert. Tequila ist ein fester Bestandteil der mexikanischen Kultur und darf nur in bestimmten Regionen, vor allem um die Stadt Tequila im Bundesstaat Jalisco, offiziell so genannt werden, ähnlich wie Champagner nur aus der Champagne stammen darf.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches Gewürz war im Mittelalter so wertvoll, dass es teilweise mit Gold aufgewogen wurde?",
   answers: [
@@ -1691,7 +1691,7 @@ export const RAW_QUESTIONS = [
   fact: "Safran, gewonnen aus den getrockneten Stempelfäden der Krokusblüte, war im Mittelalter so kostbar, dass er sprichwörtlich „mit Gold aufgewogen“ wurde. Für ein Kilo Safran braucht man bis zu 150.000 Blüten, die alle von Hand geerntet werden müssen. Ein enormer Aufwand. Safran wurde nicht nur zum Würzen und Färben von Speisen genutzt, sondern auch als Heilmittel. Sein hoher Wert führte sogar zu Betrugsversuchen, bei denen Fälscher Safran mit anderen Pflanzenteilen streckten, woraufhin im 15. Jahrhundert in Nürnberg die „Safranschou“ stattfand, ein spezielles Gericht, das Safran-Fälscher hart bestrafte.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches Rindfleisch gilt als das exklusivste und teuerste?",
   answers: [
@@ -1704,7 +1704,7 @@ export const RAW_QUESTIONS = [
   fact: "Kobe-Rindfleisch stammt von einer speziellen Linie des japanischen Wagyu-Rinds aus der Region Kobe. Es ist berühmt für seine außergewöhnlich feine Marmorierung aus Fettäderchen, die das Fleisch besonders zart und aromatisch machen. Die Tiere werden streng nach traditionellen Regeln gezüchtet, und nur Rinder, die alle Qualitätskriterien erfüllen, dürfen als „Kobe-Beef“ verkauft werden. Dadurch gehört es zu den teuersten Fleischsorten der Welt. Spitzenstücke (A5) können mehrere Hundert Euro pro Kilo kosten. Wagyu ist die allgemeine japanische Rinderrasse, während Kobe eine geschützte Herkunftsbezeichnung ist, also das „Champagner unter den Rindfleischsorten“.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was ist das älteste bekannte alkoholische Getränk der Welt?",
   answers: [
@@ -1717,7 +1717,7 @@ export const RAW_QUESTIONS = [
   fact: "Bier gilt als das älteste bekannte alkoholische Getränk der Menschheit. Schon vor über 6.000 Jahren brauten die Sumerer in Mesopotamien aus vergorenem Getreide eine frühe Form des Bieres. Archäologen fanden sogar Keilschrift-Rezepte und Darstellungen, wie Menschen mit Strohhalmen gemeinsam aus großen Gefäßen tranken. Bier war nicht nur Genussmittel, sondern auch wichtige Nahrungsquelle: Es war nahrhafter und vor allem sauberer als Wasser, das oft verunreinigt war. Auch die Ägypter brauten Bier und gaben es sogar den Arbeitern beim Pyramidenbau als tägliche Ration.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welche Art gilt als der teuerste Trüffel der Welt?",
   answers: [
@@ -1730,7 +1730,7 @@ export const RAW_QUESTIONS = [
   fact: "Der weiße Alba-Trüffel aus dem Piemont in Norditalien gilt als der exklusivste und teuerste Trüffel der Welt. Er wächst nur wenige Monate im Jahr, tief unter der Erde, und wird mit speziell abgerichteten Hunden gesucht. Sein Aroma ist unvergleichlich intensiv: eine Mischung aus Knoblauch, Käse und erdigem Moschus. Bei Auktionen erzielen besonders große Exemplare Spitzenpreise von über 100.000 Euro. Der Trüffel ist so rar, dass er als der „Diamant der Küche“ bezeichnet wird.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Aus welchem Tier wird echter Kaviar gewonnen?",
   answers: [
@@ -1756,7 +1756,7 @@ export const RAW_QUESTIONS = [
   fact: "Echte Perlen entstehen in Austern, wenn ein Fremdkörper wie etwa ein Sandkorn in die Schale gelangt. Um sich zu schützen, überzieht die Auster den Eindringling Schicht für Schicht mit Perlmutt. Nach vielen Jahren entsteht so eine Perle. Natürliche Perlen sind extrem selten, deshalb werden heute fast alle Perlen in Perlenfarmen gezüchtet: Den Austern wird dabei bewusst ein kleines Kügelchen eingesetzt. Besonders wertvoll sind die weißen Akoya-Perlen aus Japan, die schwarzen Tahiti-Perlen und die großen Südsee-Perlen. Neben Austern können auch andere Muscheln Perlen bilden, aber diese sind meist klein und unförmig und gelten nicht als Schmuckqualität.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Wo wurde die Pizza Margherita erfunden?",
   answers: [
@@ -1769,7 +1769,7 @@ export const RAW_QUESTIONS = [
   fact: "Die Pizza Margherita stammt aus Neapel und gilt als die „Mutter aller Pizzen“. 1889 soll der neapolitanische Pizzabäcker Raffaele Esposito sie zu Ehren von Königin Margherita von Savoyen gebacken haben. Ihre Zutaten Tomaten (rot), Mozzarella (weiß) und Basilikum (grün) symbolisieren die Farben der italienischen Flagge. Ob die Geschichte historisch bis ins Detail stimmt, ist zwar umstritten, aber fest steht: Die Pizza Margherita ist ein kulinarisches Wahrzeichen Italiens und wurde 2017 von der UNESCO sogar zum immateriellen Kulturerbe erklärt.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welche italienische Stadt gilt als Geburtsort des Aperol Spritz?",
   answers: [
@@ -1782,7 +1782,7 @@ export const RAW_QUESTIONS = [
   fact: "Der beliebte Aperol Spritz stammt ursprünglich aus Venedig. Schon im 19. Jahrhundert tranken die Österreicher, die damals Venetien besetzt hielten, den sogenannten „Veneziano“ (oder Venediger), ein stiller Weißwein, der mit einem Schuss Wasser („spritzen“) leichter gemacht wurde. Später entwickelte sich daraus der Spritz, bei dem man statt stillem Wein den aufkommenden Prosecco bzw. Sekt verwendete. Erst mit der Einführung des Likörs Aperol 1919 in Padua bekam der Drink seine berühmte orange Farbe und den bittersüßen Geschmack.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "In welchem Martini-Cocktail wird zusätzlich Olivenwasser verwendet?",
   answers: [
@@ -1795,7 +1795,7 @@ export const RAW_QUESTIONS = [
   fact: "Der Dirty Martini ist eine Abwandlung des klassischen Dry Martini. Er wird mit Gin oder Vodka, Wermut und zusätzlich etwas Olivenlake (Olivenwasser) gemixt. Dadurch erhält er einen salzig-herzhaften Geschmack und natürlich wird er traditionell mit einer Olive im Glas serviert. Der Name „Dirty“ („schmutzig“) kommt genau von dieser trüben, salzigen Note, die den Drink vom klaren Dry Martini unterscheidet.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches Land produziert weltweit am meisten Wein?",
   answers: [
@@ -1808,7 +1808,7 @@ export const RAW_QUESTIONS = [
   fact: "Italien ist seit Jahren der größte Weinproduzent der Welt, noch vor Frankreich und Spanien. Das Land bringt jährlich rund 40–50 Millionen Hektoliter hervor. Berühmt ist Italien vor allem für seine riesige Vielfalt: von den kräftigen Rotweinen der Toskana (Chianti, Brunello) über die spritzigen Prosecco-Schaumweine aus Venetien bis hin zu edlen Barolo und Amarone Weinen aus dem Norden. Mit über 500 offiziell anerkannten Rebsorten ist Italien ein wahres Weinparadies und verbindet Massenproduktion mit Spitzenqualität.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Warum hatten mittelalterliche Menschen oft Bier statt Wasser auf dem Tisch?",
   answers: [
@@ -1821,7 +1821,7 @@ export const RAW_QUESTIONS = [
   fact: "Im Mittelalter war Wasser oft verunreinigt und voller Bakterien, weil Abwässer ungefiltert in Flüsse und Brunnen gelangten. Beim Bierbrauen dagegen wurden die Zutaten gekocht, wodurch Keime abgetötet wurden. Deshalb galt Bier, auch in schwacher Form, das sogenannte „Kleine Bier“, als deutlich sicherer zu trinken. Außerdem lieferte es Kalorien und Nährstoffe. Selbst Kinder bekamen im Alltag eher Bier als Wasser.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Was unterscheidet ein „IPA“ geschichtlich von anderen Bieren?",
   answers: [
@@ -1834,7 +1834,7 @@ export const RAW_QUESTIONS = [
   fact: "Das India Pale Ale (IPA) entstand im 18. Jahrhundert in England. Um Bier für den langen Seeweg in die britischen Kolonien nach Indien haltbar zu machen, gaben die Brauer mehr Hopfen und auch etwas mehr Alkohol hinzu: beides wirkt konservierend. So überstand das Bier die monatelangen Schiffspassagen besser. Der intensive Hopfen sorgte für den typisch herb-fruchtigen Geschmack, der IPAs heute so beliebt macht. Ursprünglich also eine praktische Lösung für den Export, entwickelte es sich später zu einem eigenen Bierstil, der die Craft-Beer-Szene weltweit prägt.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Was ist die Hauptzutat in „Spaghetti allo Scoglio“?",
   answers: [
@@ -1847,7 +1847,7 @@ export const RAW_QUESTIONS = [
   fact: "„Spaghetti allo Scoglio“ ist ein italienisches Pastagericht aus den Küstenregionen, bei dem die Nudeln mit einer Mischung aus Meeresfrüchten wie Muscheln, Venusmuscheln, Garnelen, Tintenfisch oder Scampi serviert werden. Der Name bedeutet wörtlich „Spaghetti an den Klippen“ also Pasta mit dem, was man direkt vom Felsen am Meer erntet.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Was versteht man unter dem Gericht „Surf and Turf“?",
   answers: [
@@ -1860,7 +1860,7 @@ export const RAW_QUESTIONS = [
   fact: "Surf and Turf kombiniert das Beste aus zwei Welten: zartes Steak (Turf = Land) und edle Meeresfrüchte (Surf = Meer), meist Hummer, Garnelen oder Scampi. Das Gericht wurde in den USA in den 1960er-Jahren populär und galt damals als Inbegriff von Luxus, weil man zwei teure Zutaten auf einem Teller vereinte. Heute ist es ein Klassiker in gehobenen Steak und Fischrestaurants.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches Steakstück wird im Deutschen auch „Lendensteak“ genannt?",
   answers: [
@@ -1873,7 +1873,7 @@ export const RAW_QUESTIONS = [
   fact: "Das Filetsteak stammt aus der Rinderlende und wird daher auch „Lendensteak“ genannt. Es liegt an der Innenseite des Rückens entlang der Wirbelsäule und ist ein kaum beanspruchter Muskel, darum ist es besonders zart, mager und feinfasrig. Das Filet gilt als das edelste Stück vom Rind und wird in verschiedenen Formen serviert wie als Filet Mignon, Chateaubriand oder Tournedos. Durch seinen hohen Wert macht das Filet nur einen sehr kleinen Teil des gesamten Rinds aus, was es so exklusiv und teuer macht.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welches Steak wird auch „Entrecôte“ genannt?",
   answers: [
@@ -1886,7 +1886,7 @@ export const RAW_QUESTIONS = [
   fact: "Das Ribeye-Steak wird im Französischen „Entrecôte“ genannt, was so viel bedeutet wie „zwischen den Rippen“. Es stammt aus dem vorderen Rücken des Rinds, genauer zwischen der 8. und 12. Rippe. Charakteristisch ist das sichtbare Fettauge in der Mitte, das dem Steak Saftigkeit und intensiven Geschmack verleiht. In den USA ist es als Ribeye bekannt, in Deutschland oft auch als Hochrippensteak.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welche amerikanischen Gerichte sind für langsames Räuchern bekannt und gehören zur „heiligen Dreifaltigkeit des BBQ“?",
   answers: [
@@ -1899,7 +1899,7 @@ export const RAW_QUESTIONS = [
   fact: "In der amerikanischen BBQ-Tradition gilt die „Holy Trinity of Barbecue“ als Königsdisziplin: Beef Brisket (Rinderbrust), Pulled Pork (Schweineschulter oder Nacken, die so lange gegart wird, bis man sie zerpflücken kann) und Spare Ribs (Schweinerippen). Diese Gerichte werden über viele Stunden bei niedriger Temperatur im Smoker gegart – oft 10 bis 16 Stunden! Das langsame Räuchern mit Hartholz verleiht ihnen ihren unverwechselbaren Rauchgeschmack. Besonders im Süden der USA, etwa in Texas, North und South Carolina oder Memphis, ist BBQ nicht nur Essen, sondern eine Kultur und Lebensphilosophie. ",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Aus welchem Fleisch muss ein traditionelles Wiener Schnitzel sein?",
   answers: [
@@ -1912,7 +1912,7 @@ export const RAW_QUESTIONS = [
   fact: "Ein echtes Wiener Schnitzel wird ausschließlich aus Kalbfleisch gemacht. Es wird dünn geklopft, in Mehl, Ei und Semmelbröseln paniert und in reichlich Butterschmalz oder Öl goldbraun ausgebacken. In Österreich ist der Name sogar geschützt: Nur Schnitzel aus Kalb darf offiziell „Wiener Schnitzel“ heißen. Varianten mit Schwein oder Huhn sind zwar weit verbreitet und beliebt, müssen aber korrekt als „Schnitzel Wiener Art“ bezeichnet werden.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Wie unterscheidet sich ein traditioneller Döner in der Türkei von einem griechischen Gyros?",
   answers: [
@@ -1925,7 +1925,7 @@ export const RAW_QUESTIONS = [
   fact: "Der türkische Döner Kebab wird traditionell aus Lamm oder Kalbfleisch zubereitet, das auf einem Spieß gegrillt und dünn abgeschnitten wird. In der Türkei wird er meist schlicht im Fladenbrot mit etwas Gemüse oder Reis serviert. Der griechische Gyros dagegen besteht fast immer aus Schweinefleisch, das ebenfalls am Drehspieß gegart wird, aber stärker gewürzt ist und mit Tzatziki, Tomaten und Zwiebeln im Pitabrot serviert wird. Beide Gerichte sind eng verwandt, unterscheiden sich aber klar durch die Fleischsorte und die typische Beilage.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Woher stammt der Döner Kebab ursprünglich?",
   answers: [
@@ -3251,7 +3251,7 @@ export const RAW_QUESTIONS = [
   fact: "The Line soll eine ultramoderne Stadt in Saudi-Arabien werden: 170 km lang, aber nur 200 Meter breit und 500 Meter hoch, mit spiegelnder Glasfassade. Geplant ist, dass dort 9 Millionen Menschen leben. Komplett ohne Autos, mit Hightech-Transport in nur wenigen Minuten von einem Ende zum anderen. Ob das Projekt wirklich so umgesetzt wird, bleibt umstritten. Es gilt als Symbol für gigantische Zukunftsvisionen.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches 7-Sterne-Luxushotel gilt als das luxuriöseste Hotel der Welt?",
   answers: [
@@ -4707,7 +4707,7 @@ export const RAW_QUESTIONS = [
   fact: "Jede unserer Zellen braucht Energie, um arbeiten zu können, zum Denken, Bewegen, Atmen oder Verdauen. Diese Energie gewinnt der Körper aus Zucker, Fetten und Eiweißen. Damit dieser Prozess funktioniert, wird Sauerstoff benötigt. In den Mitochondrien der Zellen reagiert Sauerstoff mit Nährstoffen, wobei ATP entsteht, die „Batterie“ unseres Körpers. Ohne Sauerstoff hören die Zellen schon nach wenigen Minuten auf zu funktionieren, besonders im Gehirn."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Was ist „Suser“ (auch Federweißer genannt)?",
   answers: [
@@ -4902,7 +4902,7 @@ export const RAW_QUESTIONS = [
   fact: "Leoparden (und auch Jaguare) können manchmal eine Melanismus-Mutation haben, dabei produziert ihr Körper besonders viel dunkles Pigment. Das Ergebnis ist ein fast komplett schwarzes Fell. Solche Tiere nennt man Schwarze Panther. Interessanterweise sieht man bei gutem Licht trotzdem noch die typischen Flecken im Fell durchschimmern. Der Begriff „Panther“ ist also keine eigene Tierart, sondern eine Bezeichnung für besonders dunkel gefärbte Leoparden oder Jaguare."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welche Spirituosen gehören klassisch in einen Long Island Iced Tea?",
   answers: [
@@ -4993,7 +4993,7 @@ export const RAW_QUESTIONS = [
   fact: "Bakterien sind winzige, aber vollständige Zellen. Sie können sich selbst vermehren, Energie gewinnen und kommen überall vor. Viele sind sogar nützlich, z. B. im Darm. Viren dagegen sind extrem klein und bestehen nur aus Erbmaterial in einer Eiweißhülle. Sie können sich nicht selbst vermehren, sondern brauchen eine Wirtszelle, in die sie ihr Erbgut einschleusen. Deshalb wirken Antibiotika gegen Bakterien, aber nicht gegen Viren. Gegen diese helfen nur das Immunsystem oder Impfungen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Wie wird aus Milch Käse hergestellt?",
   answers: [
@@ -5006,7 +5006,7 @@ export const RAW_QUESTIONS = [
   fact: "Käse entsteht, wenn Milch gerinnt. Dafür wird entweder Lab (ein Enzym aus Kälbermägen oder heute auch mikrobiell hergestellt) oder spezielle Milchsäurebakterien zugegeben. Die Eiweiße in der Milch verklumpen, es bildet sich fester Käsebruch und flüssige Molke. Der Käsebruch wird dann gepresst, gesalzen und je nach Sorte unterschiedlich lange gereift: von wenigen Tagen (z. B. Frischkäse) bis zu Jahren (z. B. Parmesan). Durch die Reifung entstehen die Aromen, die jede Käsesorte einzigartig machen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Woraus besteht Tofu?",
   answers: [
@@ -5149,7 +5149,7 @@ export const RAW_QUESTIONS = [
   fact: "Mit Motion Capture („Bewegungserfassung“) tragen Schauspieler spezielle Anzüge mit Sensoren. Kameras zeichnen jede Bewegung und sogar Gesichtsausdrücke auf, die dann direkt auf eine digitale Figur übertragen werden. Ohne Motion Capture müssten Animatoren jede Bewegung per Hand riggen und animieren, ein extrem aufwendiger Prozess. Durch echte Schauspieler wirken Figuren wie Gollum in Der Herr der Ringe, Caesar in Planet der Affen oder die Na’vi in Avatar viel realistischer, weil sie auf echter Körpersprache und Mimik beruhen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was erhalten Restaurants als Auszeichnung für eine besonders gute Küche?",
   answers: [
@@ -5214,7 +5214,7 @@ export const RAW_QUESTIONS = [
   fact: "Ozeanien ist kein eigener Kontinent, sondern eine geografisch-kulturelle Region. Sie umfasst Australien, Neuseeland, Neuguinea sowie hunderte Inseln in Polynesien, Mikronesien und Melanesien. Der Begriff macht es einfacher, all diese Länder und Inseln zusammenzufassen. Geologisch gesehen gehören die Gebiete zu unterschiedlichen Kontinentalplatten wie Asien oder Australien, politisch und geografisch fasst man sie aber unter „Ozeanien“ zusammen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was ist Matcha?",
   answers: [
@@ -5227,7 +5227,7 @@ export const RAW_QUESTIONS = [
   fact: "Matcha ist ein grüner Tee in Pulverform, der in Japan eine lange Tradition hat. Er wird aus speziellen Teepflanzen hergestellt, die vor der Ernte im Schatten wachsen. Dadurch entwickeln die Blätter mehr Chlorophyll und Aminosäuren. Nach dem Trocknen werden die Blätter zu einem extrem feinen Pulver vermahlen. Beim Trinken von Matcha wird das ganze Blatt aufgenommen, nicht nur ein Aufguss. Deshalb enthält Matcha besonders viele Antioxidantien, Koffein und L-Theanin. Er macht wach wie Kaffee, wirkt aber gleichzeitig beruhigend und fördert die Konzentration. Ein Grund, warum Matcha schon seit Jahrhunderten in der japanischen Teezeremonie genutzt wird."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Aus welcher Pflanze wird echter, traditioneller Tee hergestellt?",
   answers: [
@@ -5955,7 +5955,7 @@ export const RAW_QUESTIONS = [
   fact: "Das Zwerchfell ist eine muskuläre Trennwand zwischen Brust- und Bauchhöhle. Es zieht sich beim Einatmen zusammen, wodurch die Lunge sich mit Luft füllt. Ohne das Zwerchfell könnten wir nicht atmen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Was bedeutet „Marmorierung“ bei Fleisch?",
   answers: [
@@ -5968,7 +5968,7 @@ export const RAW_QUESTIONS = [
   fact: "Als Marmorierung bezeichnet man die feinen weißen Fettadern im roten Muskelfleisch. Sie verlaufen wie Adern durch das Fleisch. Fetteinschlüsse schmelzen beim Braten oder Grillen, halten das Fleisch saftig und sorgen für intensiven Geschmack. Besonders berühmt ist das stark marmorierte Wagyu- oder Kobe-Rindfleisch aus Japan, das weltweit als das Besonderste gilt."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Warum ist Rindfleisch rot und Hühnerfleisch hell?",
   answers: [
@@ -5981,7 +5981,7 @@ export const RAW_QUESTIONS = [
   fact: "Rotes Fleisch enthält viel Myoglobin, ein Protein, das Sauerstoff in den Muskeln speichert. Tiere wie Rinder oder Schweine haben viele langsam arbeitende Muskeln, die dauernd Energie brauchen: darum ist ihr Fleisch rot. Hühnerbrust dagegen besteht vor allem aus schnell arbeitenden Muskeln für kurze Flüge, die kaum Myoglobin enthalten: deshalb ist das Fleisch dort hell. Bei den ständig benutzten Hühnerbeinen ist das Fleisch dunkler."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Wovon hängt es ab, wie zart ein Stück Fleisch ist?",
   answers: [
@@ -5994,7 +5994,7 @@ export const RAW_QUESTIONS = [
   fact: "Je weniger ein Muskel beim Tier beansprucht wurde, desto zarter ist er. Das edle Filet liegt am Rücken und wird kaum genutzt, daher ist es besonders weich. Muskeln an Beinen oder Schultern arbeiten ständig, sind fester, aber dafür geschmacklich intensiver. Diese werden deshalb meist länger gegart."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welcher Krankheitserreger macht rohes Geflügelfleisch besonders gefährlich?",
   answers: [
@@ -6007,7 +6007,7 @@ export const RAW_QUESTIONS = [
   fact: "In rohem Geflügelfleisch finden sich häufig Salmonellen oder Campylobacter-Bakterien. Diese können schon in kleinen Mengen schwere Durchfallerkrankungen, Fieber und Dehydrierung verursachen. Darum empfehlen Lebensmittelhygiene-Regeln, Huhn immer vollständig durchzugaren und Küchenutensilien sofort gründlich zu reinigen. Rindfleisch hingegen ist im Inneren meist keimfrei, Bakterien sitzen fast nur auf der Oberfläche. Wird das Fleisch frisch verarbeitet oder die Oberfläche vorher erhitzt, kann man es auch roh essen."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was macht Chili scharf?",
   answers: [
@@ -6020,7 +6020,7 @@ export const RAW_QUESTIONS = [
   fact: "Chilis enthalten den Stoff Capsaicin, der in den Samen und Schoten sitzt. Capsaicin reizt die Schmerz- und Wärmerezeptoren von Säugetieren. Dadurch brennt Chili im Mund und schreckt Fressfeinde ab."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: false,
   question: "Welcher Chili gilt (Stand 2025) als der schärfste der Welt?",
   answers: [
@@ -7749,7 +7749,7 @@ export const RAW_QUESTIONS = [
   fact: "Das Zeichen C leitet sich vom lateinischen Wort „centum“ ab, das hundert bedeutet. Das römische Zahlensystem arbeitet additiv und subtraktiv, daher steht XC für neunzig und CX für einhundertzehn. Wichtige weitere Zeichen sind I für eins, V für fünf, X für zehn, L für fünfzig, D für fünfhundert und M für tausend.",
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Woraus werden klassische italienische Gnocchi gemacht?",
   answers: [
@@ -7918,7 +7918,7 @@ export const RAW_QUESTIONS = [
   fact: "Der Spitzname Big Apple tauchte in den zwanziger Jahren in Sportkolumnen auf und meinte die großen Preisgelder der New Yorker Pferderennbahnen. Jazzmusiker der dreißiger Jahre übernahmen den Ausdruck für die größte Bühne, denn wer es in New York schafft, schafft es überall. Heute steht Big Apple für die Energie der Metropole, ihre Broadway Shows, Wolkenkratzer, Parks und die Mischung aus Kulturen, die New York einzigartig macht."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welches ist das meist gegessene Essen auf der Welt?",
   answers: [
@@ -8100,7 +8100,7 @@ export const RAW_QUESTIONS = [
   fact: "Capybaras, auch Wasserschweine genannt, leben in den Feuchtgebieten und Savannen Südamerikas und sind hervorragend an das Wasser angepasst. Sie haben leicht gespreizte Zehen, dichteres Fell und die Augen sowie Ohren sitzen weit oben am Kopf, sodass sie beim Schwimmen über Wasser bleiben. Capybaras sind sehr soziale Tiere und bewegen sich in Gruppen, die an Flussufern grasen und bei Gefahr ins Wasser flüchten. Sie können mehrere Minuten tauchen und entgehen so Fressfeinden wie Kaimanen, Anakondas oder Jaguaren. Ihr friedliches Wesen führt dazu, dass sich oft andere Tiere in ihrer Nähe aufhalten, etwa Vögel, die Parasiten aus dem Fell picken."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Woraus wird Zimt gewonnen?",
   answers: [
@@ -8334,7 +8334,7 @@ export const RAW_QUESTIONS = [
   fact: "Echte Euro-Banknoten haben mehrere sichtbare und unsichtbare Merkmale. Dazu gehören Wasserzeichen, ein dunkler Sicherheitsfaden, ein Hologrammstreifen oder ein Hologrammfenster, die Smaragdzahl mit Farbwechsel, fühlbarer Reliefdruck, Mikroschrift sowie UV- und Infrarotmerkmale. In der Europa-Serie ist zudem ein durchsichtiges Portraitfenster in den hohen Stückelungen zu sehen. Ein RFID-Chip oder ein anderer elektronischer Datenträger ist nicht eingebaut. Euro-Scheine enthalten also keine Chips, keine Magnetstreifen und keine QR-Codes, die Prüfung erfolgt rein optisch, haptisch und mit Licht."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Welche gilt als fünfte Grundgeschmacksrichtung neben süß, sauer, salzig und bitter?",
   answers: [
@@ -8477,7 +8477,7 @@ export const RAW_QUESTIONS = [
   fact: "In Athen entwickelten sich im fünften Jahrhundert vor Christus Volksversammlungen und Ratsgremien, in denen freie männliche Bürger politische Entscheidungen trafen. Losverfahren sollten Ämter fair verteilen, Reden in der Versammlung hatten hohe Bedeutung. Es war keine moderne Demokratie, denn Frauen, Sklaven und Metöken waren ausgeschlossen, dennoch prägte das Experiment spätere politische Ideen weltweit."
 },
 {
-  category: "essen-trinken",
+  category: "gastronomie",
   general_knowledge: true,
   question: "Was bedeutet „mediterrane Küche“?",
   answers: [
