@@ -11,6 +11,8 @@
     "test": "tests"
   },
   "scripts": {
+    "deploy": "ember build -prod && ember github-pages:commit -m \"Deploy\" && git push origin gh-pages",
+    "deploy:clean": "rm -rf dist tmp && ember build -prod && git switch gh-pages && git rm -r . && git commit -m \"clear gh-pages\" || true && git switch - && ember github-pages:commit -m \"Deploy\" && git push origin gh-pages",
     "build": "ember build --environment=production",
     "format": "prettier . --cache --write",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
